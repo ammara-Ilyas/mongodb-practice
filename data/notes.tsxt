@@ -1,0 +1,11 @@
+Databese command
+show dbs      (to see dbs)
+db           (check current db)
+use databaseName  (to create new database)
+db.dropDatabase()   (to delet)
+
+
+Collections command
+show collections      (to see collections)
+db.createCollection("data")  (to create new collections)
+db.data.drop()  (to delet)
