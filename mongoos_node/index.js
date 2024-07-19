@@ -23,7 +23,8 @@ const product = new mongoose.model("Product", productSchema);
 
 const main = async () => {
   try {
-    const data = await product.find({ price: { $gte: 20 } });
+    const data = await product.find({ price: { $gte: 20 } }).limit(5);
+    console.log(data);
   } catch (error) {
     console.log(error);
   }
